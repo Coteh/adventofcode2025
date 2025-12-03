@@ -2,7 +2,7 @@
 
 [![Test AoC 2025](https://github.com/Coteh/adventofcode2025/actions/workflows/run_aoc_test.yml/badge.svg)](https://github.com/Coteh/adventofcode2025/actions/workflows/run_aoc_test.yml)
 
-Advent of Code 2025 solutions. Trying Zig this year.
+Advent of Code 2025 solutions. Trying [Zig](https://ziglang.org/) this year.
 
 ## Instructions
 
