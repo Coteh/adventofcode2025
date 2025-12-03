@@ -1,0 +1,15 @@
+name: Test AoC 2025
+on: [push]
+jobs:
+  Test-AoC-2025:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Checking out ${{ github.ref }} from ${{ github.repository }}."
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Install Zig
+        uses: mlugg/setup-zig@v2
+        with:
+          version: 0.15.2
+      - name: Run test
+        run: ./test.sh
