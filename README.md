@@ -11,13 +11,13 @@ To compile, and then run:
 ```sh
 zig build-exe 01/main.zig
 
-./main < 01/input
+./main < ./data/2025/01/input
 ```
 
 To compile and run in one step:
 
 ```sh
-zig run 01/main.zig < 01/input
+zig run 01/main.zig < ./data/2025/01/input
 ```
 
 ## Progress
