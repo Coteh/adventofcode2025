@@ -48,14 +48,16 @@ cat << EOF > "$DAY/test.sh"
 
 set -e
 
+DATA_DIR="./data/2025"
+
 echo "Running unit tests..."
 
 zig test $DAY/main.zig
 
 echo "Running real tests..."
 
-zig run "./$DAY/main.zig" < "./$DAY/sample" | diff "./$DAY/expected_sample" -
-zig run "./$DAY/main.zig" < "./$DAY/input" | diff "./$DAY/expected" -
+zig run "./$DAY/main.zig" < "${DATA_DIR}/$DAY/sample" | diff "${DATA_DIR}/$DAY/expected_sample" -
+zig run "./$DAY/main.zig" < "${DATA_DIR}/$DAY/input" | diff "${DATA_DIR}/$DAY/expected" -
 EOF
 
 chmod +x "$DAY/test.sh"
