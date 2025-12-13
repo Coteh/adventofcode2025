@@ -7,6 +7,9 @@ jobs:
       - run: echo "Checking out ${{ github.ref }} from ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.DATA_PAT }}
+          submodules: recursive
       - name: Install Zig
         uses: mlugg/setup-zig@v2
         with:
