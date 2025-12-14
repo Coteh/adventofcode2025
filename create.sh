@@ -56,8 +56,8 @@ zig test $DAY/main.zig
 
 echo "Running real tests..."
 
-zig run "./$DAY/main.zig" < "${DATA_DIR}/$DAY/sample" | diff "${DATA_DIR}/$DAY/expected_sample" -
-zig run "./$DAY/main.zig" < "${DATA_DIR}/$DAY/input" | diff "${DATA_DIR}/$DAY/expected" -
+zig run "./$DAY/main.zig" < "\${DATA_DIR}/$DAY/sample" | diff "\${DATA_DIR}/$DAY/expected_sample" -
+zig run "./$DAY/main.zig" < "\${DATA_DIR}/$DAY/input" | diff "\${DATA_DIR}/$DAY/expected" -
 EOF
 
 chmod +x "$DAY/test.sh"
