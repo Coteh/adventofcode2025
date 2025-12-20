@@ -15,4 +15,4 @@ jobs:
         with:
           version: 0.15.2
       - name: Run test
-        run: ./test.sh
+        run: ./scripts/test.sh
